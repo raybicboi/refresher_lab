@@ -4,7 +4,7 @@ class ChildrenController < ApplicationController
   # GET /children
   # GET /children.json
   def index
-    @children = Child.all
+    @children = Child.alphabetical.all #lab change
   end
 
   # GET /children/1
